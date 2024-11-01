@@ -17,7 +17,7 @@ const app = express();
 
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/phoenix24-vinted");
+mongoose.connect(process.env.MONGO_URI);
 
 // import de mes router
 const userRouter = require("./routes/user");
