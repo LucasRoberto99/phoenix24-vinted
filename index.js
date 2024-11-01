@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+// correction
+
 require("dotenv").config(); // mon serveur peut à présent utilise les variables contenues dans .env
 
 const cloudinary = require("cloudinary").v2;
